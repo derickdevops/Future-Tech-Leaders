@@ -36,7 +36,12 @@ export function SiteFooter() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 transition hover:text-green-400"
             >
-              <span>💬</span>
+              <span
+                aria-hidden="true"
+                className="inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-white/10 px-1 text-[10px] font-bold"
+              >
+                WA
+              </span>
               Chat on WhatsApp
             </a>
             <Link href="/enroll" className="text-white">

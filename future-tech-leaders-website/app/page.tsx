@@ -261,7 +261,12 @@ export default function Home() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 font-semibold text-[#2563eb] transition duration-300 hover:text-green-400"
             >
-              <span>💬</span>
+              <span
+                aria-hidden="true"
+                className="inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-sky/10 px-1 text-[10px] font-bold text-sky"
+              >
+                WA
+              </span>
               Chat on WhatsApp
             </a>
           </div>

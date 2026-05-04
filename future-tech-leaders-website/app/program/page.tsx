@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import { PageShell } from "@/components/page-shell";
+import { SectionCta } from "@/components/section-cta";
 import { phases } from "@/lib/site-data";
 
 const curriculumImage =
@@ -130,23 +130,7 @@ export default function ProgramPage() {
         </div>
       </section>
 
-      <section className="bg-ink py-16 text-white">
-        <div className="mx-auto max-w-7xl px-6 text-center lg:px-10">
-          <h2 className="font-display text-4xl font-bold">
-            Secure your child&apos;s future today
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-slate-300">
-            Limited seats available for the founding cohort. Register now and
-            reserve a place before sessions fill up.
-          </p>
-          <Link
-            href="/enroll"
-            className="mt-8 inline-flex rounded-2xl bg-[#2563eb] px-7 py-4 font-semibold text-white transition duration-300 hover:-translate-y-1 hover:bg-blue-500 hover:shadow-xl"
-          >
-            Secure Your Child&apos;s Spot
-          </Link>
-        </div>
-      </section>
+      <SectionCta body="Limited seats available for the founding cohort. Register now and reserve a place before sessions fill up." />
     </PageShell>
   );
 }
