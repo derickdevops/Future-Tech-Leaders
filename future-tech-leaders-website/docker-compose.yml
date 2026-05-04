@@ -1,0 +1,12 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: future-tech-leaders-web
+    ports:
+      - "3001:3000"
+    env_file:
+      - .env.local
+    restart: unless-stopped
+
